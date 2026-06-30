@@ -190,7 +190,7 @@ to hatch.plants ;; procedure to create plants from seeds
   hatch 1 [
     set hidden? false
     set breed plants
-    set size 1
+    set size 1.5
     set progeny_maternal []
     set progeny_paternal []
     set pollinators []
@@ -954,6 +954,16 @@ end
 ;  report mean (reduce sentence .list)
 ;end
 @#$#@#$#@
+TEXTBOX
+255
+3
+995
+33
+Spatial genetic structure under habitat fragmentation. Plant colour = genetic diversity (heterozygosity):  red = inbred / homozygous  ->  blue = outbred / heterozygous. As fragmentation limits seed dispersal, related & inbred plants cluster in space.
+11
+0.0
+1
+
 GRAPHICS-WINDOW
 255
 35
