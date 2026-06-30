@@ -967,11 +967,11 @@ Spatial genetic structure under habitat fragmentation. Plant colour = genetic di
 GRAPHICS-WINDOW
 255
 35
-415
-197
+607
+387
 -1
 -1
-13.71
+32.0
 1
 10
 1
@@ -995,7 +995,7 @@ BUTTON
 0
 400
 56
-435
+433
 setup
 setup\n
 NIL
@@ -1029,7 +1029,7 @@ BUTTON
 114
 400
 170
-435
+433
 go once
 go
 NIL
@@ -1116,9 +1116,9 @@ PENS
 
 SWITCH
 890
-10
+34
 980
-43
+67
 plant_plots
 plant_plots
 0
@@ -1126,10 +1126,10 @@ plant_plots
 -1000
 
 BUTTON
-1070
-10
-1126
-44
+1073
+34
+1129
+68
 plot
 plots\n
 NIL
@@ -1356,66 +1356,6 @@ false
 PENS
 "mean" 1.0 1 -13345367 true "" ""
 
-TEXTBOX
-1278
-38
-1333
-59
-Total
-20
-0.0
-1
-
-TEXTBOX
-1273
-158
-1349
-180
-HtZ = 0
-20
-15.0
-1
-
-TEXTBOX
-1268
-519
-1345
-541
-HtZ = 3
-20
-55.0
-1
-
-TEXTBOX
-1268
-394
-1353
-416
-HtZ = 2
-20
-44.0
-1
-
-TEXTBOX
-1268
-634
-1351
-656
-HtZ = 4
-20
-105.0
-1
-
-TEXTBOX
-1268
-279
-1342
-301
-HtZ = 1
-20
-25.0
-1
-
 SLIDER
 95
 503
@@ -1487,7 +1427,7 @@ SLIDER
 94
 471
 187
-504
+503
 mutations
 mutations
 0
@@ -1595,9 +1535,9 @@ PENS
 
 SLIDER
 800
-10
-893
-43
+34
+890
+67
 sgs.scale
 sgs.scale
 1
@@ -1610,9 +1550,9 @@ HORIZONTAL
 
 BUTTON
 735
-10
+34
 800
-44
+68
 reset y axis
 set-current-plot \"plants mean dispersal distance\"\nset-plot-y-range 0 1\n\nset-current-plot \"plants mean dispersal distance coef = -1\"\nset-plot-y-range 0 1\n\nset-current-plot \"plants mean dispersal distance coef = 0\"\nset-plot-y-range 0 1\n\nset-current-plot \"plants mean dispersal distance coef = 1\"\nset-plot-y-range 0 1\n
 NIL
@@ -1644,7 +1584,7 @@ CHOOSER
 0
 575
 93
-620
+618
 strategy
 strategy
 "positive" "neutral" "negative"
@@ -1767,7 +1707,7 @@ CHOOSER
 0
 531
 93
-576
+575
 strategies
 strategies
 "single" "multi"
@@ -1885,7 +1825,7 @@ BUTTON
 114
 226
 197
-259
+258
 clear links
 clear_links
 NIL
@@ -1899,9 +1839,9 @@ NIL
 1
 
 BUTTON
-113
+114
 258
-169
+170
 292
 Pollinators
 interactive_pollinators
@@ -1970,7 +1910,7 @@ BUTTON
 0
 260
 56
-294
+293
 relatedness
 interactive_relatedness
 T
@@ -1987,7 +1927,7 @@ BUTTON
 114
 295
 170
-329
+328
 show all
 show_all
 NIL
@@ -2004,7 +1944,7 @@ BUTTON
 58
 295
 114
-329
+327
 hide seeds
 hide seeds
 NIL
@@ -2122,7 +2062,7 @@ NIL
 CHOOSER
 285
 473
-381
+380
 518
 .color
 .color
@@ -2130,9 +2070,9 @@ CHOOSER
 1
 
 BUTTON
-113
+114
 362
-169
+170
 396
 reset
 reset_landscape
@@ -2169,9 +2109,9 @@ dispersal.strategy
 
 CHOOSER
 980
-10
+34
 1072
-55
+79
 plot?
 plot?
 "All" "Negative" "Neutral" "Positive"
