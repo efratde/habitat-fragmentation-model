@@ -1,0 +1,42 @@
+# ── Data & simulation output (regenerable; never commit) ─────────────
+*.csv
+*.xlsx
+*.xls
+*.rds
+*.RData
+*.feather
+*.parquet
+/output/
+/results/
+/results - pollination dispersal/
+/1000 - single/
+/1000 - multi/
+
+# ── NetLogo temp / backup files ──────────────────────────────────────
+*.tmp.nlogo
+.*.tmp.nlogo
+*.nlogo.bak
+
+# ── External / copyrighted reference PDFs (keep code, not papers) ─────
+# (force-add YOUR OWN ODD description explicitly if you want it tracked:
+#  git add -f docs/S1-ODD.pdf)
+*.pdf
+
+# ── R / RStudio ──────────────────────────────────────────────────────
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+
+# ── Secrets / credentials ────────────────────────────────────────────
+.env
+.Renviron
+*_secret*
+*token*
+*apikey*
+
+# ── OS / editor ──────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*~
