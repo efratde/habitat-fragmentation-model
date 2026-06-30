@@ -31,8 +31,9 @@ Sweeping parameters (fragmentation regime, landscape autocorrelation, dispersal 
 
 ```
 habitat-fragmentation-model/
-├── model/        NetLogo model (.nlogo) — the simulation itself, with the
-│                 BehaviorSpace parameter-sweep experiments embedded inside it
+├── model/        NetLogo model (.nlogo) — the full desktop simulation, with the
+│                 BehaviorSpace parameter-sweep experiments embedded inside it;
+│                 also a Lite *-web.nlogo* variant that runs in NetLogo Web (browser)
 └── .gitignore    excludes simulation output, raw data, and bulky files
 ```
 
@@ -42,12 +43,16 @@ This repository contains **code, not data**. The simulation **generates** its ow
 
 ## Running the model
 
-This is a **NetLogo 6.x desktop** model. It relies on the `rnd`, `stats`, and `profiler` extensions, which **NetLogo Web does not support** — so it runs in the desktop application, **not** in the browser.
+This is a **NetLogo 6.x desktop** model. It relies on the `rnd`, `stats`, and `profiler` extensions, which **NetLogo Web does not support** — so the full model runs in the desktop application, **not** in the browser. A reduced **Lite** variant, `model/habitat-fragmentation-dispersal-model-web.nlogo`, strips those extensions (the one weighted-random draw is reimplemented in pure NetLogo, and the `stats`/`profiler`-driven analysis widgets are removed) so the core dispersal-evolution dynamics can run directly in **NetLogo Web** — see *Try it in the browser* below.
 
 1. Open `model/habitat-fragmentation-dispersal-model.nlogo` in **[NetLogo 6.x](https://ccl.northwestern.edu/netlogo/)**, with the `rnd`, `stats`, and `profiler` extensions available.
 2. Choose a landscape regime with the **fragmentation** chooser (`no`, `black uninhabitable`, or `white uninhabitable`).
 3. Click **setup**, then **go** to run the simulation interactively.
 4. For experiments: run the embedded BehaviorSpace experiment (`Tools → BehaviorSpace`), then open the output in R/RStudio to reproduce the figures.
+
+### Try it in the browser (Lite)
+
+No install needed: open the Lite variant in **[NetLogo Web](https://www.netlogoweb.org/launch)** (choose *Upload a Model* → `model/habitat-fragmentation-dispersal-model-web.nlogo`), then click **setup** and **go**. The Lite variant keeps the dispersal / pollination / establishment / reproduction dynamics intact but drops the `stats`/`profiler`-driven analysis widgets and the BehaviorSpace sweeps, which live only in the full desktop model above.
 
 ---
 
