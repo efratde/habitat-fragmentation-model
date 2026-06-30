@@ -40,15 +40,11 @@ habitat-fragmentation-model/
 
 This repository contains **code, not data**. The simulation **generates** its own data — there is nothing private here. The model reads **no external files**: the only file it touches is the run output that **BehaviorSpace writes itself** (one CSV per run). That raw output (CSV/XLSX/RData) is regenerable and is excluded via `.gitignore` to keep the repo lean.
 
-## ▶ Run it in your browser
+## Running the model
 
-The model runs live in the browser via **NetLogo Web** — no install needed:
-**[▶ Run the model in NetLogo Web](https://www.netlogoweb.org/launch#https://raw.githubusercontent.com/efratde/habitat-fragmentation-model/main/model/habitat-fragmentation-dispersal-model.nlogo)**
-*(This link activates once the repository has been pushed to GitHub, since NetLogo Web loads the model file directly from the public raw URL. Allow ~25–30 s to compile on first load — the model is large. Click **setup**, then **go**.)*
+This is a **NetLogo 6.x desktop** model. It relies on the `rnd`, `stats`, and `profiler` extensions, which **NetLogo Web does not support** — so it runs in the desktop application, **not** in the browser.
 
-## How to run locally
-
-1. Open `model/habitat-fragmentation-dispersal-model.nlogo` in **NetLogo 6.x**.
+1. Open `model/habitat-fragmentation-dispersal-model.nlogo` in **[NetLogo 6.x](https://ccl.northwestern.edu/netlogo/)**, with the `rnd`, `stats`, and `profiler` extensions available.
 2. Choose a landscape regime with the **fragmentation** chooser (`no`, `black uninhabitable`, or `white uninhabitable`).
 3. Click **setup**, then **go** to run the simulation interactively.
 4. For experiments: run the embedded BehaviorSpace experiment (`Tools → BehaviorSpace`), then open the output in R/RStudio to reproduce the figures.
